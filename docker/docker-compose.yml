@@ -1,0 +1,9 @@
+
+version: '2.3'
+services:
+  ml:
+    build: ./ml
+    container_name: ml
+    volumes:
+      - ../:/home/kindlytree
+    command: "tail -f /dev/null"
