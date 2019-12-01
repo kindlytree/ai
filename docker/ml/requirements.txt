@@ -1,7 +1,7 @@
-dvc[all]
-pyarrow
+#dvc[all]
+#pyarrow
 jupyter
 pandas
 numpy==1.16.0
-tensorflow
+#tensorflow
 seaborn

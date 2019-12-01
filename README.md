@@ -1,4 +1,4 @@
-# ai learning and traing articles and codes
+# AI learning and traing articles and codes
 
 The goal of this reposistory is to summarize the AI technologies and implementations.
 
