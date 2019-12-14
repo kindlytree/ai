@@ -5,5 +5,4 @@
 - [ubuntu](/test)
 
 ## 国内加速
-
 - https://www.daocloud.io/mirror#accelerator-doc

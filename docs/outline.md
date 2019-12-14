@@ -50,7 +50,7 @@ keywords: out of bag error,
 
 ### recurrent neural network
 
-## Reinforement learning
+## Reinforcement learning
 
 ### MDP
 

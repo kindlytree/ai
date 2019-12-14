@@ -22,7 +22,6 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [深度学习算法与编程](https://blog.csdn.net/oBrightLamp/article/details/85067981)
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
 
-
 ## TODO items
 - [ ] summarize the documents on youdao notes
 - [ ] begin samples code writing
