@@ -5,11 +5,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 ## The components of the repository
 
 ### data component
-- popular open dataset
-    - [coco]()
-    - [pascal]()
-    - [cityscape]()
-- domain relate dataset
+
 
 ### documents
 

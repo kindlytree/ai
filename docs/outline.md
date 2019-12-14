@@ -13,7 +13,7 @@ key words: Hessian matrix, second derivative, Multivariate function Taylor expan
 
 ### generalized linear models
 
-### generative learnign method
+### generative learning method
 
 ### svm
 
