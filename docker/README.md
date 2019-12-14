@@ -1,7 +1,8 @@
 # docker使用
 
 ## 安装
-- https://hub.docker.com/editions/community/docker-ce-desktop-windows
+- [windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [ubuntu](/test)
 
 ## 国内加速
 
