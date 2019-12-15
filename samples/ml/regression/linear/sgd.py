@@ -7,35 +7,24 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import random
 import time
-
-path = 'ex1data1.txt'
-data = pd.read_csv(path, header=None, names=['Population', 'Profit'])
-data.head()
-
-data.describe()
-
-data.plot(kind='scatter', x='Population', y='Profit', figsize=(12,8))
-plt.show()
+import logging
+import sys,os
+import argparse
+from tqdm import tqdm
+lib_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(lib_path, '../../../../'))
+from configs.configs import cfg
 
 
-def  computeCost(X, y, theta):
+logging.basicConfig(level=logging.INFO)
+
+'''
+please refer to docs/linear_regression.md for the principles of the linear algorithm
+'''
+
+def computeCost(X, y, theta):
     inner = np.power(((X * theta.T) - y), 2)
     return np.sum(inner) / (2 * len(X))
-
-data.insert(0, 'Ones', 1)
-
-# set X (training data) and y (target variable)
-cols = data.shape[1]
-X = data.iloc[:,0:cols-1]#X是所有行，去掉最后一列
-y = data.iloc[:,cols-1:cols]#X是所有行，最后一列
-X.head()#head()是观察前5行
-y.head()
-
-X = np.matrix((X.values))
-y = np.matrix((y.values))
-theta = np.matrix(np.array([0,0]))
-
-computeCost(X, y, theta)
 
 
 def stochasticGradientDescent(X, y, theta, alpha, iters):
@@ -48,7 +37,7 @@ def stochasticGradientDescent(X, y, theta, alpha, iters):
     print('train_indexs after', train_indexs)
 
 
-    for i in range(iters):
+    for i in tqdm(range(iters)):
         # error = (X * theta.T) - y  batch
         sample_index = i % len(X)
         #print('sample index ', sample_index, X.shape)
@@ -66,38 +55,70 @@ def stochasticGradientDescent(X, y, theta, alpha, iters):
         theta = temp
         cost[i] = computeCost(X, y, theta)
 
+        if i % 1000 == 0:
+            logging.info('iters {} and costs {}'.format(i, cost[i]))
+
         if sample_index == len(X)-1:
             random.shuffle(train_indexs)
 
     return theta, cost
 
-alpha = 0.01
-iters = 50000
+if __name__ == "__main__":
 
-start = time.time()
-g, cost = stochasticGradientDescent(X, y, theta, alpha, iters)
-end = time.time()
-print('cost time is:',end-start)
+    data_path = cfg.data.linear_regression
+    data = pd.read_csv(data_path, header=None, names=['Population', 'Profit'])
+    data.insert(0, 'Ones', 1)
+    # set X (training data) and y (target variable)
+    cols = data.shape[1]
+    X = data.iloc[:,0:cols-1]#X是所有行，去掉最后一列
+    y = data.iloc[:,cols-1:cols]#X是所有行，最后一列
+    #X.head()#head()是观察前5行
+    #y.head()
+    X = np.matrix((X.values))
+    y = np.matrix((y.values))
+    theta = np.matrix(np.array([0,0]))
+    computeCost(X, y, theta)
 
-computeCost(X, y, g)
+    alpha = 0.01
+    iters = 50000
+
+    start = time.time()
+    g, cost = stochasticGradientDescent(X, y, theta, alpha, iters)
+    end = time.time()
+    print('cost time is:',end-start)
+
+    computeCost(X, y, g)
 
 
-x = np.linspace(data.Population.min(), data.Population.max(), 100)
-f = g[0, 0] + (g[0, 1] * x)
+    x = np.linspace(data.Population.min(), data.Population.max(), 100)
+    f = g[0, 0] + (g[0, 1] * x)
 
-fig, ax = plt.subplots(figsize=(12,8))
-ax.plot(x, f, 'r', label='Prediction')
-ax.scatter(data.Population, data.Profit, label='Traning Data')
-ax.legend(loc=2)
-ax.set_xlabel('Population')
-ax.set_ylabel('Profit')
-ax.set_title('Predicted Profit vs. Population Size')
+
+    fig, ax = plt.subplots(figsize=(12,8))
+    ax.plot(x, f, 'r', label='Prediction')
+    ax.scatter(data.Population, data.Profit, label='Traning Data')
+    ax.legend(loc=2)
+    ax.set_xlabel('Population')
+    ax.set_ylabel('Profit')
+    ax.set_title('Predicted Profit vs. Population Size')
+    plt.show()
+
+
+    fig, ax = plt.subplots(figsize=(12,8))
+    ax.plot(np.arange(iters), cost, 'r')
+    ax.set_xlabel('Iterations')
+    ax.set_ylabel('Cost')
+    ax.set_title('Error vs. Training Epoch')
+    plt.show()
+
+
+'''
+path = 'ex1data1.txt'
+data = pd.read_csv(path, header=None, names=['Population', 'Profit'])
+data.head()
+data.describe()
+data.plot(kind='scatter', x='Population', y='Profit', figsize=(12,8))
 plt.show()
+'''
 
 
-fig, ax = plt.subplots(figsize=(12,8))
-ax.plot(np.arange(iters), cost, 'r')
-ax.set_xlabel('Iterations')
-ax.set_ylabel('Cost')
-ax.set_title('Error vs. Training Epoch')
-plt.show()

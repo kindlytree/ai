@@ -4,6 +4,11 @@ services:
   ml:
     build: ./ml
     container_name: ml
+    environment:
+      - DISPLAY=unix$DISPLAY
+      - GDK_SCALE
+      - GDK_DPI_SCALE
     volumes:
       - ../:/home/kindlytree
+      - /tmp/.X11-unix:/tmp/.X11-unix
     command: "tail -f /dev/null"

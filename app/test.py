@@ -12,4 +12,6 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description = 'app test for ai algorithms demos')
     p.add_argument('-place_holder',default= 'default test', help = 'one or more intergers is need')
     args = p.parse_args()
-    print(args.place_holder)
+    #print(args.place_holder, cfg.data.linear_regression)
+    linear_regression_cmd = 'python3 samples/ml/regression/linear/sgd.py'
+    os.system(linear_regression_cmd)

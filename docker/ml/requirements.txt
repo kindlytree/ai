@@ -4,6 +4,7 @@ pyyaml
 easydict
 jupyter
 pandas
+tqdm
 numpy==1.16.0
 #tensorflow
 seaborn
