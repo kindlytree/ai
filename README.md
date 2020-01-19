@@ -11,6 +11,13 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 
 ### samples
 
+#### pytorch samples
+- (强烈推荐)[pytorch入门与实践](https://github.com/chenyuntc/pytorch-book)
+- Our samples 
+  - location: ./samples/pytorch
+  - how to use
+    - docker environment setup [Manual](./docs/deep_learning/pytorch/manual.md)  
+    - open samples on local web browser(http://localhost:1234) 
 ### dockers
 
 ## references
@@ -21,6 +28,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [deep-learning-glossary](http://www.wildml.com/deep-learning-glossary/)
 - [深度学习算法与编程](https://blog.csdn.net/oBrightLamp/article/details/85067981)
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
+
 
 ## TODO items
 - [ ] summarize the documents on youdao notes

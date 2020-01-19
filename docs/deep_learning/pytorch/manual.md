@@ -14,10 +14,16 @@ sudo apt-get clean
 sudo apt-get update
 ```
 
-- jupyter notebook --generate-config
-   - Writing default config to: /root/.jupyter/jupyter_notebook_config.py
-     - c.NotebookApp.ip = '*'
-     - c.NotebookApp.port = 8888
-     - c.NotebookApp.notebook_dir = '/home/kindlytree'
-   - jupyter notebook password(input i0****st)
-   - jupyter notebook --allow-root
+- Docker environment setup
+  - cd docker/dl/pytorch
+  - execute docker-compose build
+  - execute docker-compose up -d
+  - execute docker exec -it  pytorch bash
+- Jupyter notebook environment setup
+  - jupyter notebook --generate-config
+    - Writing default config to: /root/.jupyter/jupyter_notebook_config.py
+    - c.NotebookApp.ip = '*'
+    - c.NotebookApp.port = 8888
+    - c.NotebookApp.notebook_dir = '/home/kindlytree'
+  - jupyter notebook password(input i0****st)
+  - jupyter notebook --allow-root

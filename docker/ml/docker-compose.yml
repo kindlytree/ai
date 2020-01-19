@@ -2,7 +2,7 @@
 version: '2.3'
 services:
   ml:
-    build: ./ml
+    build: ./
     container_name: ml
     environment:
       - DISPLAY=unix$DISPLAY
