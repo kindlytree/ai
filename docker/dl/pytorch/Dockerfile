@@ -11,4 +11,5 @@ RUN apt-get install nano
 
 RUN conda install ipython
 RUN conda install jupyter
+RUN conda install matplotlib
 # RUN chmod -R a+w .
