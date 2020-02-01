@@ -31,5 +31,5 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 
 
 ## TODO items
-- [ ] summarize the documents on youdao notes
-- [ ] begin samples code writing
+- [ ] Windows docker environment setup
+- [ ] Linear Regression sample code(adding an example from blog's link besides autograd.ipynb document)

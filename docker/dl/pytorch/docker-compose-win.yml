@@ -1,0 +1,15 @@
+
+version: '2.3'
+services:
+  kindlytree_ai:
+    #image: pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-devel
+    build: ./
+    container_name: pytorch
+    runtime: nvidia
+    image: kindlytree_ai/pytorch:1.0
+    ports:
+      - "8081:8081"
+      - "1234:1234"    
+    volumes:
+      - ../../../:/home/kindlytree
+    command: "tail -f /dev/null"
