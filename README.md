@@ -1,13 +1,13 @@
-# AI learning and training articles and codes
+# AI related articles and codes
 
-The goal of this reposistory is to summarize the AI technologies and implementations, please refer to [outline](docs/outline.md) for the overall summaries of the AI topics.
+The goal of this reposistory is to summarize the AI technologies and implementations.
 
 ## The components of the repository
 
-### data component
+### Datasets
 
 
-### documents and samples
+### Articles and samples
   The documents for the AI articles are mainly written using markdown format, for easily demostrating the examples, we use docker to setup pytorch, jupyter notebook and other libraries environments. please refer to [INSTASLL](./docs/deep_learning/pytorch/manual.md) for the preparation of the environments setup.
 
 #### Math

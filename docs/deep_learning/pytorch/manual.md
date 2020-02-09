@@ -20,10 +20,10 @@
 - Jupyter notebook Usage
   - open the web browser
   - input in address bar : localhost:1234/tree
-```
 
 ## Samples introduction
 
+```
 legacy:
 - sources.list用https
 - [error](https://blog.csdn.net/lqsnjust/article/details/81129129)
