@@ -12,4 +12,5 @@ RUN apt-get install nano
 RUN conda install ipython
 RUN conda install jupyter
 RUN conda install matplotlib
+RUN conda install scikit-learn
 # RUN chmod -R a+w .

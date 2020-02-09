@@ -18,3 +18,4 @@ services:
       - ../../../:/home/kindlytree
       - /tmp/.X11-unix:/tmp/.X11-unix
     command: "tail -f /dev/null"
+    #command: bash -c "./home/kindlytree/docker/dl/pytorch/jupyter_notebook.sh && tail -f /dev/null"
