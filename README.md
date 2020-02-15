@@ -1,4 +1,4 @@
-# AI related articles and codes
+# AI related articles and samples
 
 The goal of this reposistory is to summarize the AI technologies and implementations.
 
@@ -22,9 +22,9 @@ The goal of this reposistory is to summarize the AI technologies and implementat
       - [Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd) [code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)
       - Newton's Method  [Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638) [code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)
   - **Part III** [Generalized Linear Models](http://note.youdao.com/noteshare?id=b814a849cf4752746518d4f63ef0d79c)
-  - **Part IV** Generative Learning algorithms
-      - Gaussian discriminant analysis
-      - Naive Bayes
+  - **Part IV** [Generative Learning algorithms](http://note.youdao.com/noteshare?id=179205e43731362a960bf52236599fa9)
+      - [Gaussian discriminant analysis](http://note.youdao.com/noteshare?id=7a34e72665581d2d379ac9a9cdebd0ce)
+      - [Naive Bayes](http://note.youdao.com/noteshare?id=0ca8c256d4dcb349dd32b155594426ea)
   - **Part V** Kernel Methods
   - **Part VI** SVM
   - **Part VI** Learning Theory
@@ -69,13 +69,9 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 ## references
 - [stanford course](http://cs229.stanford.edu/syllabus.html)
 - [ufldl](http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial)/(http://ufldl.stanford.edu/tutorial/)
-- [夕小瑶](https://www.jiqizhixin.com/users/22850d06-ec08-47b6-87c6-9d065a38c83c)
-- [latex常用公式](https://blog.csdn.net/oBrightLamp/article/details/83964331)
-- [deep-learning-glossary](http://www.wildml.com/deep-learning-glossary/)
-- [深度学习算法与编程](https://blog.csdn.net/oBrightLamp/article/details/85067981)
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
 
 
 ## TODO items
-- [ ] Windows docker environment setup
-- [ ] Linear Regression sample code(adding an example from blog's link besides autograd.ipynb document)
+- [ ] css229 articles and samples preparation
+
