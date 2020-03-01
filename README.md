@@ -13,6 +13,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 
 #### pytorch samples
 - (强烈推荐)[pytorch入门与实践](https://github.com/chenyuntc/pytorch-book)
+- [PyTorchDocs](https://github.com/fendouai/PyTorchDocs)
 - Our samples 
   - location: ./samples/pytorch
   - how to use
