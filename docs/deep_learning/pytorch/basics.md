@@ -1,5 +1,11 @@
 # Basics
 
+## Installation
+
+### update
+pip install --upgrade torch torchvision -i https://pypi.douban.com/simple
+
+
 ## Tensor
 
 ### basics
