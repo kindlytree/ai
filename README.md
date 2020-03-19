@@ -81,7 +81,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
   - how to use
     - docker environment setup [Manual](./docs/deep_learning/pytorch/manual.md)  
     - open samples on local web browser(http://localhost:1234) 
-### dockers
+### Papers and related code
+- [cvpr](https://github.com/Sophia-11/Awesome-CVPR-Paper)
 
 ## references
 - [stanford course](http://cs229.stanford.edu/syllabus.html)
