@@ -83,6 +83,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
     - open samples on local web browser(http://localhost:1234) 
 ### Papers and related code
 - [cvpr](https://github.com/Sophia-11/Awesome-CVPR-Paper)
+- [CVPR2020](https://github.com/extreme-assistant/CVPR2020-Paper-Code-Interpretation/blob/master/CVPR2020.md)
+- [ICCV 2019](https://github.com/extreme-assistant/iccv2019)
 
 ## references
 - [stanford course](http://cs229.stanford.edu/syllabus.html)

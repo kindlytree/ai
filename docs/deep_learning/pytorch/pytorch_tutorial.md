@@ -3,6 +3,7 @@
 - [官方tutorial](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)  
 - [中文手册](https://github.com/zergtant/pytorch-handbook)
 - (强烈推荐)[入门与实践](https://github.com/chenyuntc/pytorch-book)
+- [官方的实例](https://github.com/pytorch/examples)
 
 
 ## Tensor
