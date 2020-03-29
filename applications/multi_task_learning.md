@@ -7,6 +7,7 @@
   - 论文：https://arxiv.org/abs/1705.07115v3
   - 代码：https://github.com/yaringal/multi-task-learning-example/blob/master/multi-task-learning-example.ipynb 
   - code:https://github.com/ranandalon/mtl
+  - code:https://github.com/oscarkey/multitask-learning
   - 应用:视觉计算，场景理解
   - 简要总结:用统计概率的思想解释权重，即训练样本服从联合概率最大化，并学习权重
 - Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks(ICML2018)
