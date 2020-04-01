@@ -7,6 +7,7 @@
   - 论文：https://arxiv.org/abs/1705.07115v3
   - 代码：https://github.com/yaringal/multi-task-learning-example/blob/master/multi-task-learning-example.ipynb 
   - code:https://github.com/ranandalon/mtl
+  - code:https://github.com/Hui-Li/multi-task-learning-example-PyTorch/blob/master/multi-task-learning-example-PyTorch.ipynb
   - 应用:视觉计算，场景理解
   - 简要总结:用统计概率的思想解释权重，即训练样本服从联合概率最大化，并学习权重
 - Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks(ICML2018)
@@ -41,6 +42,7 @@
   - 简要总结：每一个任务训练一个子网络（学到稀疏矩阵），最后多个任务联合训练，不同的任务用不同的子网络训练，优点：可以不用所有的样本都要标记所有的任务.
 - ICCV2019 oral：Many Task Learning With Task Routing
   - https://github.com/gstrezoski/TaskRouting
-  - https://arxiv.org/abs/1903.12117  
+  - https://arxiv.org/abs/1903.12117
+  - 简要总结：每个任务都有专门的chanel掩码来确定子网络，不同的任务可以部分共享channel，不利的地方就是inference的时候要单个任务单独inference，时间上没有多少优势  
 ## Projects
 - https://github.com/hav4ik/Hydra  Multi-Task Learning Framework on PyTorch
