@@ -56,6 +56,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - **Part XIII** Reinforcement Learning and Control
 
 #### Deep Learning
+- References
+  - [斯坦福网络文字版课程](http://ufldl.stanford.edu/tutorial/)
 - CNN
 - RNN
     - LSTM
@@ -63,24 +65,10 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - GAN
 - VAE
 
-#### Computer Vision
-- Object Detection
-- Semantic/Instance Segmentation
-- Image to image translation
-    - [github](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) 
-    - [pix2pix model definition](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/models/pix2pix_model.py)
-
-#### AI practices
-- [Data realted issus](http://www.kindlytree.com/2020/02/25/data-related-problems-for-ai/)
-
 #### pytorch samples
 - (强烈推荐)[pytorch入门与实践](https://github.com/chenyuntc/pytorch-book)
 - [PyTorchDocs](https://github.com/fendouai/PyTorchDocs)
-- Our samples 
-  - location: ./samples/pytorch
-  - how to use
-    - docker environment setup [Manual](./docs/deep_learning/pytorch/manual.md)  
-    - open samples on local web browser(http://localhost:1234) 
+
 ### Papers and related code
 - [cvpr](https://github.com/Sophia-11/Awesome-CVPR-Paper)
 - [CVPR2020](https://github.com/extreme-assistant/CVPR2020-Paper-Code-Interpretation/blob/master/CVPR2020.md)
@@ -95,4 +83,5 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 
 ## TODO items
 - [ ] css229 articles and samples preparation
+- [ ] most popular applications introduction
 
