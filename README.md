@@ -80,6 +80,10 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
 - [微软AI课程](https://github.com/microsoft/ai-edu)
 
+## FAQ
+- How to setup local environment for python notebook?
+  - please refer [notebook setup](./docs/deep_learning/pytorch/manual.md) to setup up the environment
+- To be added. 
 
 ## TODO items
 - [ ] css229 articles and samples preparation

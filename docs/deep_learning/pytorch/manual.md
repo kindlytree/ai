@@ -14,7 +14,7 @@
   - execute 'sudo ./start.sh' to set jupyter notebook(input password, such as 123)
 
 - Start Jupyter notebook
-  - docker exec -it pytorch bash
+  - docker exec -it kindlytree_ai bash
   - execute "jupyter notebook --allow-root"
 
 - Jupyter notebook Usage

@@ -4,7 +4,7 @@ services:
   kindlytree_ai:
     #image: pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-devel
     build: ./
-    container_name: pytorch
+    container_name: kindlytree_ai
     runtime: nvidia
     image: kindlytree_ai/pytorch:1.0
     ports:

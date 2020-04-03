@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker exec -it pytorch bash -c '/home/kindlytree/docker/dl/pytorch/jupyter_notebook.sh'
+docker exec -it kindlytree_ai bash -c '/home/kindlytree/docker/dl/pytorch/jupyter_notebook.sh'
