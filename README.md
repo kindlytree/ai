@@ -66,6 +66,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [ufldl](http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial)/(http://ufldl.stanford.edu/tutorial/)
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
 - [微软AI课程](https://github.com/microsoft/ai-edu)
+- [哥伦比亚大学 应用机器学习](https://www.cs.columbia.edu/~amueller/comsw4995s20/schedule/)
 
 ## FAQ
 - How to setup local environment for python notebook?
