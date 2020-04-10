@@ -17,8 +17,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [Taylor_expansion_Multi_Variables_Functions_extremum](http://note.youdao.com/noteshare?id=951f44d73e0777672abffc7ef891f2ea)
 
 #### Machine Learning
-|              Chapter         |          code        |
-|------------------------------|----------------------|
+|              Chapter         |          sub section or code        |
+|------------------------------|-------------------------------------|
 |[Linear_Regression](http://101.132.45.94/2020/01/30/linear-regression/)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/linear_regression.ipynb)|
 |[Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)|
 |[Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638)|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)|
@@ -32,15 +32,11 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |Adaboost | |
 |Decision Tree | |
 |Random Forest | |
-|Tree Boosting | |
-|GBDT | [CART](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)|
-|XGBoost | |
-|LightGBM | |
-|HMM| |
+|Tree Boosting |[CART](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  GBDT  XGBoost LightGBM|
+|PGM| HMM MRF|
 |Neural Networks|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
 |The k-means clustering algorithm | |
-|Mixtures of Gaussians and the EM algorithm |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022) |
-|The EM algorithm| |
+|Mixtures of Gaussians and the EM algorithm |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022)  The EM algorithm|
 |Factor analysis| |
 |Principal components analysis| |
 |Independent Components Analysis| |
