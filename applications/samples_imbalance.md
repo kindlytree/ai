@@ -9,6 +9,8 @@
   - https://arxiv.org/pdf/1708.02002.pdf 
   - https://github.com/clcarwin/focal_loss_pytorch
 
-- Imbalance Problems in Object Detection: A
-Review
+- Imbalance Problems in Object Detection: A Review
  - https://arxiv.org/pdf/1909.00169.pdf
+
+-  Repository of the Papers Addressing Imbalance Problems in Object Detection
+   - https://github.com/kemaloksuz/ObjectDetectionImbalance#1.2
