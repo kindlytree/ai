@@ -29,10 +29,10 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |[Kernel Methods](http://note.youdao.com/noteshare?id=5de8fb8eaa20e53517671b7d706bd6c6) | |
 |[SVM](http://note.youdao.com/noteshare?id=04eb156cc9eb0137844a2a381f3f1668) | |
 |[Learning Theory](https://note.youdao.com/ynoteshare1/index.html?id=85c244e8f122dc38842208d7c6f0bfe4&type=note) | |
-|Adaboost | |
-|Decision Tree | |
-|Random Forest | |
-|Tree Boosting |[CART](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  GBDT  XGBoost LightGBM|
+|Adaboost |[算法原理及推导](https://www.cnblogs.com/liuwu265/p/4692347.html) |
+|[Decision Tree](https://blog.csdn.net/jiaoyangwm/article/details/79525237) | |
+|[Random Forest](https://blog.csdn.net/weixin_41940752/article/details/98717868) | |
+|Tree Boosting |[CART回归树](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  GBDT  [XGBoost](https://blog.csdn.net/u014411730/article/details/78796890) LightGBM|
 |PGM| HMM MRF|
 |Neural Networks|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
 |The k-means clustering algorithm | |
