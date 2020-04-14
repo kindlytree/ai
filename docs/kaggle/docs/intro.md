@@ -25,6 +25,7 @@
     - Model, predict and solve the problem.
     - Visualize, report, and present the problem solving steps and final solution.
     - Supply or submit the results.
+- **示例**： https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn
 ## FAQ
 
 ### 查阅kernel的方法
