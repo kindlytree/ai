@@ -19,7 +19,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 #### Machine Learning
 |              Topic         |          sub section or code        |
 |------------------------------|-------------------------------------|
-|[Linear_Regression](http://101.132.45.94/2020/01/30/linear-regression/)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/linear_regression.ipynb)|
+|[Linear_Regression](http://note.youdao.com/noteshare?id=e3d052b17e33e6a1d9c45b7f8a90d86c/)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/linear_regression.ipynb)|
 |[Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)|
 |[Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638)|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)|
 |[Generalized Linear Models](http://note.youdao.com/noteshare?id=b814a849cf4752746518d4f63ef0d79c)|[softmax regression code](https://github.com/kindlytree/ai/blob/master/samples/ml/softmax_regression.ipynb)|

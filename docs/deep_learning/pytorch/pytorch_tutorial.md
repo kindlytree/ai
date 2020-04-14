@@ -29,6 +29,7 @@ model.to(device)
 ```
 
 ### TensorBoard
+- https://zhuanlan.zhihu.com/p/125337011
 
 #### setup and writing
 ```
