@@ -48,6 +48,9 @@ NAs[NAs.sum(axis=1) > 0]
 
 
 # Prints R2 and RMSE scores
+# https://blog.csdn.net/Softdiamonds/article/details/80061191  R2 决定系数（拟合优度）
+# 模型越好：r2→1
+# 模型越差：r2→0
 def get_score(prediction, lables):    
     print('R2: {}'.format(r2_score(prediction, lables)))
     print('RMSE: {}'.format(np.sqrt(mean_squared_error(prediction, lables))))
@@ -188,6 +191,103 @@ for i, cond in enumerate(zip(features['Condition1'], features['Condition2'])):
     dummies.ix[i, cond] = 1
 features = pd.concat([features, dummies.add_prefix('Condition_')], axis=1)
 features.drop(['Condition1', 'Condition2'], axis=1, inplace=True)
+
+
+# Getting Dummies from Exterior1st and Exterior2nd
+exteriors = set([x for x in features['Exterior1st']] + [x for x in features['Exterior2nd']])
+dummies = pd.DataFrame(data=np.zeros((len(features.index), len(exteriors))),
+                       index=features.index, columns=exteriors)
+for i, ext in enumerate(zip(features['Exterior1st'], features['Exterior2nd'])):
+    dummies.ix[i, ext] = 1
+features = pd.concat([features, dummies.add_prefix('Exterior_')], axis=1)
+features.drop(['Exterior1st', 'Exterior2nd', 'Exterior_nan'], axis=1, inplace=True)
+
+# Getting Dummies from all other categorical vars
+# This returns a Series with the data type of each column. The result’s index is the original DataFrame’s columns. Columns with mixed types are stored with the object dtype.
+#  https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html
+# get_dummies 是利用pandas实现one hot encode的方式。详细参数请查看官方文档
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html
+for col in features.dtypes[features.dtypes == 'object'].index:
+    for_dummy = features.pop(col)
+    features = pd.concat([features, pd.get_dummies(for_dummy, prefix=col)], axis=1)
+### Copying features
+features_standardized = features.copy()
+
+'''
+Replacing numeric features by standardized values
+df = pd.DataFrame({'A': [1, 2, 3],
+                   'B': [400, 500, 600]})
+new_df = pd.DataFrame({'B': [4, 5, 6],
+                       'C': [7, 8, 9]})
+df.update(new_df)
+df
+   A  B
+0  1  4
+1  2  5
+2  3  6
+'''
+features_standardized.update(numeric_features_standardized)
+#Obtaining standardized dataset
+
+
+### Splitting features
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.select_dtypes.html
+# select types
+train_features = features.loc['train'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+test_features = features.loc['test'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+
+### Splitting standardized features
+train_features_st = features_standardized.loc['train'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+test_features_st = features_standardized.loc['test'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+
+### Splitting features
+train_features = features.loc['train'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+test_features = features.loc['test'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+
+### Splitting standardized features
+train_features_st = features_standardized.loc['train'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+test_features_st = features_standardized.loc['test'].drop('Id', axis=1).select_dtypes(include=[np.number]).values
+
+### Shuffling train sets
+# sklearn.utils.shuffle解析 https://blog.csdn.net/hustqb/article/details/78077802
+train_features_st, train_features, train_labels = shuffle(train_features_st, train_features, train_labels, random_state = 5)
+### Splitting
+x_train, x_test, y_train, y_test = train_test_split(train_features, train_labels, test_size=0.1, random_state=200)
+x_train_st, x_test_st, y_train_st, y_test_st = train_test_split(train_features_st, train_labels, test_size=0.1, random_state=200)
+
+'''
+https://www.kaggle.com/neviadomski/how-to-get-to-top-25-with-simple-model-sklearn
+I'm using ElasticNetCV estimator to choose best alpha and l1_ratio for my Elastic Net model.
+Gradient Boosting
+We use a lot of features and have many outliers. So I'm using max_features='sqrt' to reduce overfitting of my model. I also use loss='huber' because it more tolerant to outliers. All other hyper-parameters was chosen using GridSearchCV.
+ElasticNet回归及机器学习正则化:https://blog.csdn.net/previous_moon/article/details/71376726 
+'''
+ENSTest = linear_model.ElasticNetCV(alphas=[0.0001, 0.0005, 0.001, 0.01, 0.1, 1, 10], l1_ratio=[.01, .1, .5, .9, .99], max_iter=5000).fit(x_train_st, y_train_st)
+train_test(ENSTest, x_train_st, x_test_st, y_train_st, y_test_st)
+
+# Average R2 score and standart deviation of 5-fold cross-validation
+scores = cross_val_score(ENSTest, train_features_st, train_labels, cv=5)
+print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+
+GBest = ensemble.GradientBoostingRegressor(n_estimators=3000, learning_rate=0.05, max_depth=3, max_features='sqrt',
+                                               min_samples_leaf=15, min_samples_split=10, loss='huber').fit(x_train, y_train)
+train_test(GBest, x_train, x_test, y_train, y_test)
+
+# Average R2 score and standart deviation of 5-fold cross-validation
+# 使用sklearn的cross_val_score进行交叉验证 https://blog.csdn.net/qq_36523839/article/details/80707678
+scores = cross_val_score(GBest, train_features_st, train_labels, cv=5)
+print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+
+# Retraining models
+GB_model = GBest.fit(train_features, train_labels)
+ENST_model = ENSTest.fit(train_features_st, train_labels)
+
+## Getting our SalePrice estimation
+Final_labels = (np.exp(GB_model.predict(test_features)) + np.exp(ENST_model.predict(test_features_st))) / 2
+
+## Saving to CSV
+pd.DataFrame({'Id': test.Id, 'SalePrice': Final_labels}).to_csv('2017-02-28.csv', index =False)
 
 import IPython
 IPython.embed(colors="Linux")
