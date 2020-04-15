@@ -10,6 +10,7 @@
   -  https://arxiv.org/abs/1911.09070
   -  https://github.com/toandaominh1997/EfficientDet.Pytorch
   -  https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch
+  -  https://zhuanlan.zhihu.com/p/129016081
 - M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network
   - https://github.com/qijiezhao/M2Det   
 - NAS-FCOS: Fast Neural Architecture Search for Object Detection (CVPR 2020) 
