@@ -32,11 +32,11 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |Adaboost |[算法原理及推导](https://www.cnblogs.com/liuwu265/p/4692347.html) |
 |[Decision Tree](https://blog.csdn.net/jiaoyangwm/article/details/79525237) | |
 |[Random Forest](https://blog.csdn.net/weixin_41940752/article/details/98717868) | |
-|Tree Boosting |[CART回归树](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  GBDT  [XGBoost](https://blog.csdn.net/u014411730/article/details/78796890) LightGBM|
+|Tree Boosting |[CART回归树](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  <br> GBDT <br> [XGBoost](https://blog.csdn.net/u014411730/article/details/78796890)<br> LightGBM|
 |PGM| HMM MRF|
 |Neural Networks|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
 |The k-means clustering algorithm | |
-|Mixtures of Gaussians and the EM algorithm |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022)  [The EM algorithm](https://www.cnblogs.com/bigmoyan/p/4550375.html)|
+|Mixtures of Gaussians and the EM algorithm |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022) <br> [The EM algorithm](https://www.cnblogs.com/bigmoyan/p/4550375.html)|
 |Factor analysis| |
 |Principal components analysis|[PCA](https://blog.csdn.net/program_developer/article/details/80632779) |
 |Independent Components Analysis| |
@@ -61,7 +61,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [CVPR2020](https://github.com/extreme-assistant/CVPR2020-Paper-Code-Interpretation/blob/master/CVPR2020.md)
 - [ICCV 2019](https://github.com/extreme-assistant/iccv2019)
 
-## references
+## References
 - [stanford course](http://cs229.stanford.edu/syllabus.html)
 - [ufldl](http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial)/(http://ufldl.stanford.edu/tutorial/)
 - [AndrewNg 机器学习笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/tree/master/markdown)
@@ -82,4 +82,5 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 ## TODO items
 - [ ] cs229 articles and samples preparation
 - [ ] most popular applications introduction
+- [ ] kaggle samples preparation
 
