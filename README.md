@@ -29,12 +29,12 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |[Kernel Methods](http://note.youdao.com/noteshare?id=5de8fb8eaa20e53517671b7d706bd6c6) |1. Feature mapping.||
 |[SVM](http://note.youdao.com/noteshare?id=04eb156cc9eb0137844a2a381f3f1668) |1. Functional and geometric margins. <br> 2. The optimal margin classifier. <br>3. Lagrange duality  | |
 |[Learning Theory](https://note.youdao.com/ynoteshare1/index.html?id=85c244e8f122dc38842208d7c6f0bfe4&type=note) | |
-|Adaboost | 1. Weak models <br> 2. Additive models. 3. exponential loss function. |[算法原理及推导](https://www.cnblogs.com/liuwu265/p/4692347.html) |
+|Adaboost | 1. Weak models <br> 2. Additive models. <br> 3. exponential loss function. |[算法原理及推导](https://www.cnblogs.com/liuwu265/p/4692347.html) |
 |[Decision Tree](https://blog.csdn.net/jiaoyangwm/article/details/79525237) |1. Information Entropy. <br> 2. Information gain | |
 |[Random Forest](https://blog.csdn.net/weixin_41940752/article/details/98717868) |1. Bagging method. <br> 2. out of bag error | |
 |Tree Boosting |1. Additive models. <br> 2. forward step method|[CART回归树](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  <br> GBDT <br> [XGBoost](https://blog.csdn.net/u014411730/article/details/78796890)<br> LightGBM|
 |PGM| HMM MRF|
-|Neural Networks|1.Multi layer perception machine.|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
+|Neural Networks|1.Multi layer perception machine. <br> 2. Back Propagation|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
 |The k-means clustering algorithm | |
 |Mixtures of Gaussians and the EM algorithm |1. Jensen’s inequality. <br> 2. latent random variables |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022) <br> [The EM algorithm](https://www.cnblogs.com/bigmoyan/p/4550375.html)|
 |Factor analysis| |
