@@ -17,12 +17,14 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - [Taylor_expansion_Multi_Variables_Functions_extremum](http://note.youdao.com/noteshare?id=951f44d73e0777672abffc7ef891f2ea)
 
 #### Machine Learning
-|              Topic         |          sub section or code        |
-|------------------------------|-------------------------------------|
-|[Linear_Regression](http://note.youdao.com/noteshare?id=e3d052b17e33e6a1d9c45b7f8a90d86c/)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/linear_regression.ipynb)|
-|[Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd)| [code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)|
-|[Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638)|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)|
-|[Generalized Linear Models](http://note.youdao.com/noteshare?id=b814a849cf4752746518d4f63ef0d79c)|[softmax regression code](https://github.com/kindlytree/ai/blob/master/samples/ml/softmax_regression.ipynb)|
+|              Topic         |          Key points        |  code or comments|
+|-------------------------|--------------------------------|-----------------------------|
+|[Linear_Regression](http://note.youdao.com/noteshare?id=e3d052b17e33e6a1d9c45b7f8a90d86c/) |1. The errors between labels and predictions follow normal distribution<br>2. The samples joint probability also follows normal distribution|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/linear_regression.ipynb)|
+|[Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd)|1. The sample probability follows Bernoulli distribution<br>2. The logistic function and its derivative's property <br>3. Maximize the log likelihood equals maximization of liklihood  |[code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)|
+|[Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638)|1. The second order of derivative  Hessian matrix's property. <br>2. Multi viariable Taylor expansion|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)|
+|[Generalized Linear Models](http://note.youdao.com/noteshare?id=b814a849cf4752746518d4f63ef0d79c)|1. exponential family
+distributions. <br> 2. Construct GLM according to exponential family
+distributions  |[softmax regression code](https://github.com/kindlytree/ai/blob/master/samples/ml/softmax_regression.ipynb)|
 |[Generative Learning algorithms](http://note.youdao.com/noteshare?id=179205e43731362a960bf52236599fa9)| |
 |[Gaussian discriminant analysis](http://note.youdao.com/noteshare?id=7a34e72665581d2d379ac9a9cdebd0ce) | |
 |[Naive Bayes](http://note.youdao.com/noteshare?id=0ca8c256d4dcb349dd32b155594426ea) | |
