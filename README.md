@@ -23,9 +23,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |[Logistic_Regression](http://note.youdao.com/noteshare?id=a62bb63c6a049ce5e0cdc8abfe8ba3fd)|1. The sample probability follows Bernoulli distribution<br>2. The logistic function and its derivative's property <br>3. Maximize the log likelihood equals maximization of liklihood  |[code](https://github.com/kindlytree/ai/blob/master/samples/ml/logistic_regression.ipynb)|
 |[Newton's Method](http://note.youdao.com/noteshare?id=57e9b323d4ae19c215c421fcac32b638)|1. The second order of derivative  Hessian matrix's property. <br>2. Multi viariable Taylor expansion|[code](https://github.com/kindlytree/ai/blob/master/samples/ml/newton_method.ipynb)|
 |[Generalized Linear Models](http://note.youdao.com/noteshare?id=b814a849cf4752746518d4f63ef0d79c)|1. exponential family
-distributions. <br> 2. Construct GLM according to exponential family
-distributions  |[softmax regression code](https://github.com/kindlytree/ai/blob/master/samples/ml/softmax_regression.ipynb)|
-|[Generative Learning algorithms](http://note.youdao.com/noteshare?id=179205e43731362a960bf52236599fa9)| |
+distributions. <br> 2. Construct GLM according to exponential family distributions  |[softmax regression code](https://github.com/kindlytree/ai/blob/master/samples/ml/softmax_regression.ipynb)|
+|[Generative Learning algorithms](http://note.youdao.com/noteshare?id=179205e43731362a960bf52236599fa9)| model p(x|y) instead of p(y|x)  | |
 |[Gaussian discriminant analysis](http://note.youdao.com/noteshare?id=7a34e72665581d2d379ac9a9cdebd0ce) | |
 |[Naive Bayes](http://note.youdao.com/noteshare?id=0ca8c256d4dcb349dd32b155594426ea) | |
 |[Kernel Methods](http://note.youdao.com/noteshare?id=5de8fb8eaa20e53517671b7d706bd6c6) | |
