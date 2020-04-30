@@ -8,7 +8,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 
 
 ### Articles and samples
-  The documents for the AI articles are mainly written using markdown format, for easily demostrating the examples, we use docker to setup pytorch, jupyter notebook and other libraries environments. please refer to [INSTASLL](./docs/deep_learning/pytorch/manual.md) for the preparation of the environments setup.
+  The documents for the AI articles are mainly written using markdown format, for easily demonstrating the examples, we use docker to setup pytorch, jupyter notebook and other libraries environments. please refer to [INSTASLL](./docs/deep_learning/pytorch/manual.md) for the preparation of the environments setup.
 
 #### Math
 - [Linear Algebra Review and Reference(1)](http://note.youdao.com/noteshare?id=b7a6cfe77e3906bdb5639d1acec3c88c)
@@ -33,7 +33,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 |[Decision Tree](https://blog.csdn.net/jiaoyangwm/article/details/79525237) |1. Information Entropy. <br> 2. Information gain | |
 |[Random Forest](https://blog.csdn.net/weixin_41940752/article/details/98717868) |1. Bagging method. <br> 2. out of bag error | |
 |Tree Boosting |1. Additive models. <br> 2. forward step method|[CART回归树](http://note.youdao.com/noteshare?id=922bd61daea279fed55ac3359c4f9cd3)  <br> GBDT <br> [XGBoost](https://blog.csdn.net/u014411730/article/details/78796890)<br> LightGBM|
-|PGM| HMM MRF|
+|PGM| [HMM 的通俗解释](https://zhuanlan.zhihu.com/p/25963621) <br> MRF||
 |Neural Networks|1.Multi layer perception machine. <br> 2. Back Propagation|[Back Propagation](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/) |
 |The k-means clustering algorithm | |
 |Mixtures of Gaussians and the EM algorithm |1. Jensen’s inequality. <br> 2. latent random variables |[GMM](http://note.youdao.com/noteshare?id=611be89d2eeb9c40c79bc5f5e86bc022) <br> [The EM algorithm](https://www.cnblogs.com/bigmoyan/p/4550375.html)|
