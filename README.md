@@ -46,6 +46,7 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - References
   - [斯坦福网络文字版课程](http://ufldl.stanford.edu/tutorial/)
 - CNN
+    - [CNN网络运算过程交互可视化](https://poloclub.github.io/cnn-explainer/)
 - RNN
     - LSTM
         - [公式及实现](http://note.youdao.com/noteshare?id=84b5e5bad8db62a45682c5b928a4e9a8&sub=5708D04E282940B3922FAA10C096CBE8)
