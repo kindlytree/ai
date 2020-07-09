@@ -74,11 +74,14 @@ The goal of this reposistory is to summarize the AI technologies and implementat
 - How to setup local environment for python notebook?
   - please refer [notebook setup](./docs/deep_learning/pytorch/manual.md) to setup up the environment
   
-| topic |
+| topic(ML) |
 |-------|
 |[SVM和LR的区别和联系](https://blog.csdn.net/qq_35945399/article/details/81175772)|
 |[分类器模型评价指标](https://blog.csdn.net/guohecang/article/details/52276548)|
 |[sigmoid和relu的优缺点](https://blog.csdn.net/u011684265/article/details/78039280)|
+|[高斯核为什么说有无穷多维](https://www.zhihu.com/question/35602879)|
+|[傅里叶分析的复数形式](https://www.zhihu.com/question/20977844/answer/99503904)|
+|[如何理解拉格朗日乘子法](https://www.zhihu.com/question/38586401/answer/105273125)|
 
 ## TODO items
 - [ ] cs229 articles and samples preparation
