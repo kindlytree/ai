@@ -57,6 +57,8 @@ The goal of this reposistory is to summarize the AI technologies and implementat
   - [GAN](https://arxiv.org/abs/1406.2661)
   - [条件GAN,指定生成0,1,2...9,z后加上one_hot向量](https://blog.csdn.net/hiudawn/article/details/80752084)
 - VAE [知乎专题](https://zhuanlan.zhihu.com/p/22464760)
+  - [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)
+  - [变分自编码器VAE：原来是这么一回事 | 附开源代码](https://zhuanlan.zhihu.com/p/34998569)
 
 #### pytorch samples
 - (强烈推荐)[pytorch入门与实践](https://github.com/chenyuntc/pytorch-book)
