@@ -51,7 +51,12 @@ The goal of this reposistory is to summarize the AI technologies and implementat
     - LSTM
         - [公式及实现](http://note.youdao.com/noteshare?id=84b5e5bad8db62a45682c5b928a4e9a8&sub=5708D04E282940B3922FAA10C096CBE8)
 - GAN
-- VAE
+  - DCGAN
+    - https://github.com/jacobgil/keras-dcgan
+    - [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
+  - [GAN](https://arxiv.org/abs/1406.2661)
+  - [条件GAN,指定生成0,1,2...9,z后加上one_hot向量](https://blog.csdn.net/hiudawn/article/details/80752084)
+- VAE [知乎专题](https://zhuanlan.zhihu.com/p/22464760)
 
 #### pytorch samples
 - (强烈推荐)[pytorch入门与实践](https://github.com/chenyuntc/pytorch-book)
