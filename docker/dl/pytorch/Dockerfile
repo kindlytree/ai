@@ -13,4 +13,5 @@ RUN conda install ipython
 RUN conda install jupyter
 RUN conda install matplotlib
 RUN conda install scikit-learn
+RUN pip install tensorwatch pandas -i https://pypi.douban.com/simple
 # RUN chmod -R a+w .

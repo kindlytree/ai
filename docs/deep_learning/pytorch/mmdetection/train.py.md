@@ -8,4 +8,14 @@
 
 ### train_detector
 - mmdet/apis/train.py
-- 
+
+
+
+### 使用方法
+
+#### Train
+
+```
+python tools/train.py configs/multi_task/multi_task_prototype.py --no-validate
+python tools/test.py config_file checkpoint_file
+```
