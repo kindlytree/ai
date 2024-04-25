@@ -1,0 +1,2 @@
+一开始会让Agent更偏向于探索Explore，并不是哪一个Action带来的Value最大就执行该Action，选择Action时具有一定的随机性，目的是为了覆盖更多的Action，尝试每一种可能性。
+等训练很多轮以后各种State下的各种Action基本尝试完以后，我们这时候会大幅降低探索的比例，尽量让Agent更偏向于利用Exploit，哪一个Action返回的Value最大，就选择哪一个Action。
